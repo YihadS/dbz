@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html onclick="jump()" >
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Juego Nro° 1</title>
+</head>
+<body >
+<div id="game">
+	<div id=score>
+		<h2 class="scoreboard">Score: <span id="score_count">0</span></h2>
+	</div>
+	<div id="character"></div>
+	<div id="block"></div>
+	<div id="block2"></div>
+	<div id="block3"></div>
+	<div id="block4"></div>
+	<div id="pause-m" class="pause"> 
+        <h1 id="ptitle"> JUEGO PAUSADO</h1>
+        <button id="restart" onclick="reanudar();"> Continuar </button>
+        <button onclick="reiniciar();"> Reiniciar </button>
+	</div>		
+</div>
+
+
+<audio  id="bg-song" src="sounds/sound1.mp3" type="audio/mpeg" preload="auto" loop> </audio>
+<audio  id="success" src="sounds/sound2.wav" type="audio/mpeg"> </audio>
+<audio  id="lost" src="sounds/sound3.wav" type="audio/mpeg" preload="auto" > </audio>
+<script src="index.js"></script>
+</body>
+</html>

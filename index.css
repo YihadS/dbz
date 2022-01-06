@@ -1,0 +1,176 @@
+@font-face{
+	src:url(fonts/Saiyan-Sans.ttf);
+	font-family: Saiyan;
+} 
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#game{
+width: 800px;
+height: 500px;
+border:1px solid black;
+background-image: url("img/background1.jpg");
+background-position: cover;
+  transition: all .2s ease-in-out;
+}
+#score{
+width: 200px;
+height: 50px;
+position: relative;
+left: 580px;
+top:50px;
+}
+.scoreboard{
+	font-family: saiyan;
+	color: yellow;
+	font-size: 40px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.scoreboard span{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+#character{
+width: 100px;
+height: 100px;
+left: 30px;
+background: url("img/goku.png");
+position: relative;
+top:270px;
+background-position: center;
+}
+.animate{
+	animation: jump 580ms ;
+}
+.animate2{
+	animation:jump_down 580ms ;
+}
+@keyframes jump{
+	0%{
+		top:270px;
+	}
+	30%{
+		top:145px;
+	}
+	70%{
+		top:145px;
+	}
+	100%{
+		top:270px;
+	}
+	}
+
+@keyframes jump_down{
+	0%{
+		top:270px;
+	}
+	30%{
+		top:395px;
+	}
+	70%{
+		top:395px;
+	}
+	100%{
+		top:270px;
+	}
+	}
+
+#block{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("img/ball.png");
+	background-position: center;
+	position: relative;
+	top:200px;
+	left: 780px;
+	animation: object 1.5s infinite linear;
+}
+
+#block2{
+	display:none;
+	width: 40px;
+	height: 40px;
+	background: url("img/ball.png");
+	background-position: center;
+	position: relative;
+	top:230px;
+	left: 780px;
+	animation: object 1.3s infinite linear;
+}
+
+#block3{
+	display:none;
+	width: 40px;
+	height: 40px;
+	background: url("img/ball.png");
+	background-position: center;
+	position: relative;
+	top:250px;
+	left: 780px;
+	animation: object 2s infinite linear;
+}
+
+#block4{
+	display:none;
+	width: 40px;
+	height: 40px;
+	background: url("img/ball.png");
+	background-position: center;
+	position: relative;
+	top:265px;
+	left: 780px;
+	animation: object 1s infinite linear;
+}
+
+@keyframes object{
+	0%{ 
+		left:780px;
+	}
+	100%{
+		left:-40px;
+	}
+}
+
+.pause{
+	background-color: black;
+	border: 2px solid grey;
+	text-align: center;
+		padding: 5%;
+		margin-left: 20%;
+		margin-right: 20%;
+		display: none;
+}
+
+.pause h1{
+	font-family: saiyan;
+	font-size: 60px;
+	font-weight: 600;
+	color: white;
+	-webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  padding-bottom: 4%;
+}
+
+.pause button{
+	font-family: saiyan;
+	font-size: 40px;
+	font-weight: 600;
+	color: yellow;
+	-webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+    transition: all .2s ease-in-out;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 2%;
+}
+
+.pause button:hover{
+	background-color: red;
+	  transition: all .2s ease-in-out;
+}
