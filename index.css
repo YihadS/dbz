@@ -187,3 +187,10 @@ background-position: center;
 	background-color: red;
 	  transition: all .2s ease-in-out;
 }
+
+
+@media only screen and (max-width: 1024px){
+	.controles{
+	display:   none;
+	}
+}
